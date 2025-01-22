@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in page</title>
+    <style type="text/css">
+        body{
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial;
+        }
+          .cards{
+            width: 40%;
+            height: 500px;
+            background-color: white;
+            box-shadow: 2px 2px 10px black;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            text-align: left;
+            padding-left: 150px;   
+        }
+        .cards:hover{
+            box-shadow: 2px 2px 10px green;
+        }
+        .r1-c1{
+            background-image: url("photos/Amazon-Logo-2.png");
+            background-size: cover;
+            height: 100px;
+            width: 150px;
+        }
+        .tbl1{
+            border-spacing: 10px;
+        }
+        .inp{
+            margin-left: 75px;
+        }
+        .inp1{
+            margin-left: 100px;
+        }
+        .inp2{
+            margin-left: 110px;
+        }
+        .inp3{
+            margin-left: 60px;
+        }
+        .inp4{
+            margin-left: 35px;
+        }
+        .inp5{
+            margin-left: 45px;
+        }
+        .add{
+            margin-left: -185px;
+        }
+        .button{
+            background-color: rgb(210, 221, 10);
+            color:black;
+            font-weight: bold;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            width: 300px;
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px;
+            border-bottom-left-radius: 25px;
+            margin-top: 10px;
+            text-align: center;
+            margin-left: 50px;
+            margin-top: 30px;
+        }
+        .button:hover{
+            background-color:darkorange;
+        }
+        .check{
+            text-align: center;
+            padding-top: 30px;
+        }
+        .log{
+            text-align: center;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div class="row1">
+            <div class="r1-c1">
+                
+            </div>
+            <div class="cards">
+                <table class="tbl1">
+                    <form action="/index.html">
+                        <tr>
+                            <td class="log">
+                                <h2>Log in</h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="name"><strong>Enter First Name:</strong></label>
+                                <input type="name" class="inp3" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="name"><strong>Enter Second Name:</strong></label>
+                                <input type="name" class="inp4" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="mobile"><strong>Mobile number:</strong></label>
+                            <input type="tel" name="phone" pattern="^[0-9-+\s()]*$" required class="inp"/>   
+                        </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="email"><strong>Enter Email:</strong></label>
+                                <input type="Email" required class="inp1">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="address"><strong>Enter Address:</strong></label>
+                                <td><textarea name="address" id="address" row="3" cols="20" placeholder="Address..." required class="add"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="password"><strong>Password:</strong></label>
+                                <input type="Password" required class="inp2">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="password"><strong>Confirm Password:</strong></label>
+                                <input type="Password" required class="inp5">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="check"><input type="checkbox" required><label for="checkbox">Save Your Account Details</label></td>
+                        </tr>
+                        <tr>
+                            <td><button type="submit" class="button">Log in</button></td>
+                        </tr>
+                    </form>
+                <table>
+            </div>
+        </div>
+    </center>
+</body>
+</html>

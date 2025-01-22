@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in page</title>
+    <style type="text/css">
+        body{
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial;
+        }
+          .cards{
+            width: 35%;
+            height: 500px;
+            background-color: white;
+            box-shadow: 2px 2px 10px black;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            text-align: left;
+            padding-left: 30px;
+           
+        }
+        .cards:hover{
+            box-shadow: 2px 2px 10px green;
+        }
+        .r1-c1{
+            background-image: url("photos/Amazon-Logo-2.png");
+            background-size: cover;
+            height: 100px;
+            width: 150px;
+        }
+        .tbl1{
+            border-spacing: 10px;
+        }
+        .inp{
+            margin-left: 40px;
+        }
+        .inp1{
+            margin-left: 65px;
+        }
+        .inp2{
+            margin-left: 75px;
+        }
+        .button{
+            background-color: rgb(210, 221, 10);
+            color:black;
+            font-weight: bold;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            width: 300px;
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px;
+            border-bottom-left-radius: 25px;
+            margin-top: 10px;
+            text-align: center;
+            margin-left: 50px;
+            margin-top: 30px;
+        }
+        .button:hover{
+            background-color:darkorange;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div class="row1">
+            <div class="r1-c1">
+                
+            </div>
+            <div class="cards">
+                <table class="tbl1">
+                    <form action="/web.html">
+                        <tr>
+                            <td>
+                                <h2>Sign in or create account</h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="mobile"><strong>Mobile number</strong></label>
+                            <input type="tel" name="phone" pattern="[\+]?[0-9]{1,4}[0-9]{6,14}$" required class="inp"/>   
+                        </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="email"><strong>Enter Email</strong></label>
+                                <input type="Email" required class="inp1">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="password"><strong>Password</strong></label>
+                                <input type="Password" required class="inp2">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><button type="submit" class="button">Continue</button></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>By continuing, you agree to Amazon's <a href="">Conditions <br> of Use and Privacy Notice.</a></p> <hr>
+                                <p>Buying for work? <br><a href="https://www.flipkart.com/" target="_blank">Shop on Amazon Business</a></p><hr>
+                            </td>
+                        </tr>
+                        <table  align="center" border="1" cellspacing="0" cellpadding="0">
+                            <caption><a href="">.....New To Flipcart.....</a></caption>
+                            <th><a href="/log-in.html" target="_blank">Create Your Amazon Account</a></th>
+                        </table>
+                    </form>
+                <table>
+            </div>
+        </div>
+    </center>
+</body>
+</html>
