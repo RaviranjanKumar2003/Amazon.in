@@ -4,360 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="./Web-media-queries.css">
+    <link rel="stylesheet" href="./webstyle.css">
     <title>Amazon</title>
-    <style type="text/css">
-         *{
-            margin: 0;
-            padding: 0;
-            font-family: Arial;
-            border: border-box;
-         }
-         .row1{
-             height: 60px;
-             background-color: #0f1111;
-             color: white;
-             display: flex;
-             align-items: center;
-             justify-content: space-evenly;
-         }
-         .flag{
-            width: 20px;
-            height: 15px;
-            margin: 6px;
-            margin-top: -0.8px;
-         }
-         .coll7{
-            display: flex;
-         }
-         .coll1{
-            height: 50px;
-            width: 100px;
-            text-align: right;
-         }
-         .img1{
-            background-size: cover;
-            height: 50px;
-            width: 100px;
-            text-align: left;
-         }
-         .border{
-            border: 1.5px solid transparent;
-         }
-         .border:hover{
-            border: 1.5px solid white;
-         }
-         .para1{
-            color: #cccccc;
-            font-size: 0.85rem;
-            margin-left: 15px;
-         }
-         .para2{
-            font-size: 1rem;
-            margin-left: 3px;
-        }
-        .c2-r1{
-            display: flex;
-            align-items: center;
-        }
-        .coll3{
-            display: flex;
-            height: 620px;
-            height: 40px;
-            background-color: pink;
-            border-radius: 4px;
-            justify-content: space-evenly;
-        }
-        .coll3:hover{
-            border: 2px solid orange;
-        }
-        .search-select{
-            background-color: #f3f3f3;
-            width: 50px;
-            text-align: center;
-            border-top-left-radius: 4px;
-            border-bottom-left-radius: 4px;
-            border: none;
-        }
-        .search-input{
-            width: 500px;
-            font-size: 1rem;
-            border: none;
-        }
-        .search-icon{
-            width: 45px;
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            font-size: 1.2rem;
-            background-color: #febd68;
-            border-top-right-radius: 4px;
-            border-bottom-right-radius: 4px;
-            color: #0f1111;
-        }
-        span{
-            font-size: 0.7rem;
-        }
-        .c4-r1{
-            font-size: 0.85rem;
-            font-weight: 700;
-        }
-        .coll6 i{
-            font-size: 30px;
-        }
-        .coll6{
-            font-size: 0.85rem;
-            font-weight: 700;
-        }
-        .row2{
-            height: 42px;
-            background-color: #222f3d;
-            display: flex;
-            color: white;
-            align-items: center;
-            justify-content: space-evenly;
-        }
-        .row2-coll1{
-            width: 40px;
-        }
-        .row2-coll2 p{
-            display: inline;
-            margin-left: 10px;
-        }
-        .row2-coll2{
-            width: 70%;
-            font-size: 0.85rem;
-            margin-left: 10px;
-        }
-        .row2-coll3{
-            font-size: 0.9rem;
-            font-weight: 700;
-        }
-        .img3{
-            height: 40px;
-        }
-        .border2{
-            border: 1.5px solid transparent;
-            padding: 5px;
-         }
-         .border2:hover{
-            border: 1.5px solid white;
-            padding: 5px;
-         }
-        .row3{
-            overflow: hidden;
-            position: relative;
-            background-size: cover;
-            height: 350px;
-            background-repeat: no-repeat;
-            animation: change 10s infinite ease-in-out;
-        }
-        @keyframes change{
-            0%
-            {
-                background-image: url("photos/amazon2.jpg");
-            }
-            16%
-            {
-                background-image: url("photos/amazon3.jpg");
-            }
-            32%
-            {
-                background-image: url("photos/amazon4.jpg");
-            }
-            48%
-            {
-                background-image: url("photos/amazon5.jpg");
-            }
-            64%
-            {
-                background-image: url("photos/amazon6.jpg");
-            }
-            80%
-            {
-                background-image: url("photos/amazon7.jpg");
-            }
-            100%
-            {
-                background-image: url("photos/amazon8.jpg");
-            }
-            
-        }
-        .row4{
-            
-            height: 470px;
-            display: flex;
-            background-color: #e2e7e6;
-        }
-        .cards{
-            width: 23%;
-            height: 450px;
-            background-color: white;
-            box-shadow: 2px 2px 10px black;
-            margin-top: 20px;
-            margin-left: 25px;
-        }
-        .cards:hover{
-            box-shadow: 2px 2px 10px green;
-        }
-        .r4-img{
-           width: 100%;
-           margin: 10px;
-           border-top-right-radius: 5px;
-           border-top-right-radius: 5px;
-           
-        }
-        .r4-img1{
-            width: 320px;
-            height: 250px;
-        }
-        .r4-para1{
-            margin: 40px;
-            margin-left: 5px;
-        }
-        .r4-c2-img{
-            margin: 5px;
-            margin-left: 10px;
-        }
-        .r4-c2-img1{
-            display: flex;
-            margin: 7px;
-            height: 100px;
-            width: 150px;
-        }
-        .r4-para2{
-            display: flex;
-            margin-left: 10px;
-        }
-        .r4-pp{
-            margin-left: 124px;
-        }
-        .small1{
-            margin: 15px;
-        }
-        .small2{
-            margin: 31px;
-        }
-        .sell{
-            background-color:#0f1111;
-            color: white;
-            border: none;
-            margin-left:-6px;
-        }
-        .row5{
-            height: 400px;
-            display: flex;
-            background-color: #e2e7e6;
-        }
-        .cards2{
-            width: 100%;
-            height: 300px;
-            background-color: white;
-            box-shadow: 2px 2px 10px black;
-            margin-top: 20px;
-            margin-left: 25px;
-        }
-        .cards2:hover{
-            box-shadow: 2px 2px 10px green;
-        }
-        .r5-c1{
-            display:flex;
-            margin-top: 30px;
-            margin-left: 10px;
-        }
-        .r5-a{
-            margin-left: 50px;
-        }
-        .r5-img{
-            height: 195px;
-            width: 207px;
-        }
-        .row6{
-            height: 300px;
-            display: flex;
-            background-color: #e2e7e6;
-            margin-top: -70px;
-        }
-        .row7{
-            height: 500px;
-            display: flex;
-            background-color: #e2e7e6;
-            margin-top: 20px;
-        }
-        .r7-c2-img1{
-            margin-left: 80px;
-            text-align: center;
-        }
-        .row8{
-            height: 350px;
-            display: flex;
-            background-color: #e2e7e6;
-            
-        }
-        .row9{
-            height: 150px;
-            background-color:white;
-            text-align: center;
-        }
-        .row9 h1{
-            margin-top: 30px;
-        }
-        .r9-button{
-            background-color: rgb(210, 221, 10);
-            color:black;
-            font-weight: bold;
-            padding: 10px;
-            border: none;
-            cursor: pointer;
-            width: 300px;
-            border-top-left-radius: 25px;
-            border-top-right-radius: 25px;
-            border-bottom-right-radius: 25px;
-            border-bottom-left-radius: 25px;
-            margin-top: 10px;
-        }
-        .r9-button:hover{
-            background-color:darkorange;
-        }
-        .row9 p{
-            margin-top: 10px;
-        }
-        .row10{
-            height: 42px;
-            background-color: #222f3d;
-            color: white;
-            text-align: center;
-        }
-        .r10-c1{
-            padding: 10px;
-        }
-        .row11{
-            height: 500px;
-            background-color: #0f1111;
-            color: white;
-            display: flex;
-            text-align: center;
-        }
-        .r11-c1{
-            width:150px;
-            text-align:left;
-            margin-top: 40px;
-            margin-left: 200px;
-        }
-        .r11-c2{
-            width:200px;
-            text-align:left;
-            margin-top: 40px;
-            margin-left: 200px;
-        }
-        
-        
-    </style>
 </head>
 <body>
     <header>
         <div class="row1">
             <div class="coll1">
-                <img src="/photos/alogo.webp" class="img1 border">
+                <img src="./photos/alogo.webp" class="img1 border">
             </div>
             <div class="coll2 border">
                 <p class="para1">Delivering to Nawada 803103</p>
@@ -376,17 +31,26 @@
                 </div>
             </div>
             <div class="coll7 border2">
-                <div>
-                    <img src="/photos/flag.jpg" class="flag">
-                </div>
-                <div>
-                    <strong><small>EN</small></strong>
-                    <select class="sell"></select>
-                </div>
+                <ul>
+                    <li class="enLi"><img src="./photos/flag.jpg" class="flag"><strong class="en"><small>EN</small><sub><i class="fa-solid fa-caret-down"></i></sub></strong>
+                        <div class="dropdown">
+                            <ul>
+                                <li>English</li><hr width="80%">
+                                <li>हिन्दी - HI</li>
+                                <li>தமிழ் - TA</li>
+                                <li>తెలుగు - TE</li>
+                                <li>ಕನ್ನಡ - KN</li>
+                                <li>മലയാളം - ML</li>
+                                <li>বাংলা - BN</li>
+                                <li>मराठी - MR</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
             </div>
             <div class="coll4 border">
                 <p><span>Hello,sign in</span></p>
-                <p class="c4-r1">Account & List</p>
+                <p class="c4-r1">Account & List <sub><i class="fa-solid fa-caret-down"></i></sub></p>
             </div>
             <div class="coll5 border">
                 <p><span>Returns</span></p>
@@ -394,7 +58,7 @@
             </div>
             <div class="coll6 border">
                 <i class="fa-solid fa-cart-shopping"></i>
-                Cart
+                <p>Cart</p>
             </div>
         </div>
         <div class="row2">
@@ -416,7 +80,7 @@
                 <p class="border2">New Releases</p>
             </div>
             <div class="row2-coll3 border">
-                <img src= "/photos/amazon1.jpg" class="img3">
+                <img src= "./photos/amazon1.jpg" class="img3">
             </div>
         </div>
     </header>
@@ -427,7 +91,7 @@
         <div class="cards">
             <div class="r4-img">
                 <h2>Up to 75% off | Electronics & accessories</h2>
-                <img src="/photos/amazon_h1.jpg" class="r4-img1">
+                <img src="./photos/amazon_h1.jpg" class="r4-img1">
             </div>
             <div class="r4-para1">
                 <a href=""><small>See all offers</small></a>
@@ -437,16 +101,16 @@
             <div class="r4-c2-img">
                 <h2>Starting ₹299 | Latest styles from top brands</h2>
                 <div class="r4-c2-img1">
-                    <img src="/photos/amazon_h2.jpg" class="r4-c2-img1">
-                    <img src="/photos/amazon_h3.jpg" class="r4-c2-img1">
+                    <img src="./photos/amazon_h2.jpg" class="r4-c2-img1">
+                    <img src="./photos/amazon_h3.jpg" class="r4-c2-img1">
                 </div>
                 <div class="r4-para2">
                     <p>Crocs</p>
                     <p class="r4-pp">Adidas</p>
                 </div>
                 <div class="r4-c2-img1">
-                    <img src="/photos/amazon_h4.jpg" class="r4-c2-img1">
-                    <img src="/photos/amazon_h10.jpg" class="r4-c2-img1">
+                    <img src="./photos/amazon_h4.jpg" class="r4-c2-img1">
+                    <img src="./photos/amazon_h10.jpg" class="r4-c2-img1">
                 </div>
                 <div class="r4-para2">
                     <p>Skechers</p>
@@ -461,16 +125,16 @@
             <div class="r4-c2-img">
                 <h2>Starting ₹299 | Latest styles from top brands</h2>
                 <div class="r4-c2-img1">
-                    <img src="/photos/amazon_h6.jpg" class="r4-c2-img1">
-                    <img src="/photos/amazon_h7.jpg" class="r4-c2-img1">
+                    <img src="./photos/amazon_h6.jpg" class="r4-c2-img1">
+                    <img src="./photos/amazon_h7.jpg" class="r4-c2-img1">
                 </div>
                 <div>
                     <small>Sumsung | Up to 60% <b>off</b></small>
                     <small class="small1">Oneplus | Up to 35% <b>off</b></small>
                 </div>
                 <div class="r4-c2-img1">
-                    <img src="/photos/amazon_h8.jpg" class="r4-c2-img1">
-                    <img src="/photos/amazon_h5.jpg" class="r4-c2-img1">
+                    <img src="./photos/amazon_h8.jpg" class="r4-c2-img1">
+                    <img src="./photos/amazon_h5.jpg" class="r4-c2-img1">
                 </div>
                 <div>
                     <small>Xiaomi | Up to 70% <b>off</b></small>
@@ -485,16 +149,16 @@
             <div class="r4-c2-img">
                 <h2>Minimum 50% off | Amazon brands & more</h2>
                 <div class="r4-c2-img1">
-                <img src="/photos/amazon_h15.jpg" class="r4-c2-img1">
-                <img src="/photos/amazon_h16.jpg" class="r4-c2-img1">
+                <img src="./photos/amazon_h15.jpg" class="r4-c2-img1">
+                <img src="./photos/amazon_h16.jpg" class="r4-c2-img1">
             </div>
             <div>
                 <small>Minimum 50% <b>off</b> | Beds</small>
                 <small class="small1">Starting 299 | Storage Containers</small>
             </div>
             <div class="r4-c2-img1">
-                <img src="/photos/amazon_h17.jpg" class="r4-c2-img1">
-                <img src="/photos/amazon_h18.jpg" class="r4-c2-img1">
+                <img src="./photos/amazon_h17.jpg" class="r4-c2-img1">
+                <img src="./photos/amazon_h18.jpg" class="r4-c2-img1">
             </div>
             <div>
                 <small>Xiaomi | Up to 70% <b>off</b></small>
@@ -513,13 +177,13 @@
                 <a href="" class="r5-a">See all</a>
             </div>
             <div class="r5-c1">
-                <a href=""><img src="/photos/amazon_h19.jpg" class="r5-img"></a>
-                <a href=""><img src="/photos/amazon_h20.jpg" class="r5-img"></a>
-                <a href=""><img src="/photos/amazon_h21.jpg" class="r5-img"></a>
-                <a href=""><img src="/photos/amazon_h22.jpg" class="r5-img"></a>
-                <a href=""><img src="/photos/amazon_h23.jpg" class="r5-img"></a>
-                <a href=""><img src="/photos/amazon_h24.jpg" class="r5-img"></a>
-                <a href=""><img src="/photos/amazon_h25.jpg" class="r5-img"></a>
+                <a href=""><img src="./photos/amazon_h19.jpg" class="r5-img"></a>
+                <a href=""><img src="./photos/amazon_h20.jpg" class="r5-img"></a>
+                <a href=""><img src="./photos/amazon_h21.jpg" class="r5-img"></a>
+                <a href=""><img src="./photos/amazon_h22.jpg" class="r5-img"></a>
+                <a href=""><img src="./photos/amazon_h23.jpg" class="r5-img"></a>
+                <a href=""><img src="./photos/amazon_h24.jpg" class="r5-img"></a>
+                <a href=""><img src="./photos/amazon_h25.jpg" class="r5-img"></a>
             </div>
         </div>
     </div>
@@ -530,13 +194,13 @@
                 <a href="" class="r5-a">See all</a>
             </div>
             <div class="r5-c1 border2">
-                <a href=""><img src="/photos/amazon_h26.jpg" class="r5-img"></a>
-                <a href=""><img src="/photos/amazon_h27.jpg" class="r5-img"></a>
-                <a href=""><img src="/photos/amazon_h28.jpg" class="r5-img"></a>
-                <a href=""><img src="/photos/amazon_h29.jpg" class="r5-img"></a>
-                <a href=""><img src="/photos/amazon_h30.jpg" class="r5-img"></a>
-                <a href=""><img src="/photos/amazon_h31.jpg" class="r5-img"></a>
-                <a href=""><img src="/photos/amazon_h32.jpg" class="r5-img"></a>
+                <a href=""><img src="./photos/amazon_h26.jpg" class="r5-img"></a>
+                <a href=""><img src="./photos/amazon_h27.jpg" class="r5-img"></a>
+                <a href=""><img src="./photos/amazon_h28.jpg" class="r5-img"></a>
+                <a href=""><img src="./photos/amazon_h29.jpg" class="r5-img"></a>
+                <a href=""><img src="./photos/amazon_h30.jpg" class="r5-img"></a>
+                <a href=""><img src="./photos/amazon_h31.jpg" class="r5-img"></a>
+                <a href=""><img src="./photos/amazon_h32.jpg" class="r5-img"></a>
             </div>
         </div>
     </div>
@@ -544,7 +208,7 @@
         <div class="cards">
             <div class="r4-img">
                 <h2>Up to 60% off | Car, bike parts & accessories</h2>
-                <img src="/photos/amazon_h33.jpg" class="r4-img1">
+                <img src="./photos/amazon_h33.jpg" class="r4-img1">
             </div>
             <div class="r4-para1">
                 <a href=""><small>See all offers</small></a>
@@ -554,12 +218,12 @@
             <div class="r4-c2-img">
                 <h2>Customers’ Most-Loved Fashion for you</h2>
                 <div class="r4-c2-img1">
-                    <img src="/photos/amazon_h34.jpg" class="r4-c2-img1">
-                    <img src="/photos/amazon_h35.jpg" class="r4-c2-img1 r7-c2-img1">
+                    <img src="./photos/amazon_h34.jpg" class="r4-c2-img1">
+                    <img src="./photos/amazon_h35.jpg" class="r4-c2-img1 r7-c2-img1">
                 </div>
                 <div class="r4-c2-img1">
-                    <img src="/photos/amazon_h36.jpg" class="r4-c2-img1">
-                    <img src="/photos/amazon_h37.jpg" class="r4-c2-img1">
+                    <img src="./photos/amazon_h36.jpg" class="r4-c2-img1">
+                    <img src="./photos/amazon_h37.jpg" class="r4-c2-img1">
                 </div>
             </div>
             <div class="r4-para1">
@@ -570,12 +234,12 @@
             <div class="r4-c2-img">
                 <h2>Customers’ Most-Loved products</h2>
                 <div class="r4-c2-img1">
-                    <img src="/photos/amazon_h42.jpg" class="r4-c2-img1">
-                    <img src="/photos/amazon_h39.jpg" class="r4-c2-img1">
+                    <img src="./photos/amazon_h42.jpg" class="r4-c2-img1">
+                    <img src="./photos/amazon_h39.jpg" class="r4-c2-img1">
                 </div>
                 <div class="r4-c2-img1">
-                    <img src="/photos/amazon_h40.jpg" class="r4-c2-img1">
-                    <img src="/photos/amazon_h41.jpg" class="r4-c2-img1 r7-c2-img1">
+                    <img src="./photos/amazon_h40.jpg" class="r4-c2-img1">
+                    <img src="./photos/amazon_h41.jpg" class="r4-c2-img1 r7-c2-img1">
                 </div>
             </div>
             <div class="r4-para1">
@@ -586,12 +250,12 @@
             <div class="r4-c2-img">
                 <h2>Up to 60% off | Home & kitchen essentials from wom…</h2>
                 <div class="r4-c2-img1">
-                <img src="/photos/amazon_h43.jpg" class="r4-c2-img1">
-                <img src="/photos/amazon_h44.jpg" class="r4-c2-img1 r7-c2-img1">
+                <img src="./photos/amazon_h43.jpg" class="r4-c2-img1">
+                <img src="./photos/amazon_h44.jpg" class="r4-c2-img1 r7-c2-img1">
             </div>
             <div class="r4-c2-img1">
-                <img src="/photos/amazon_h45.jpg" class="r4-c2-img1">
-                <img src="/photos/amazon_h46.jpg" class="r4-c2-img1 r7-c2-img1">
+                <img src="./photos/amazon_h45.jpg" class="r4-c2-img1">
+                <img src="./photos/amazon_h46.jpg" class="r4-c2-img1 r7-c2-img1">
             </div>
         </div>
         <div class="r4-para1">
@@ -606,21 +270,21 @@
                 <a href="" class="r5-a">See all offers</a>
             </div><hr>
             <div class="r5-c1">
-                <a href=""><img src="/photos/amazon_h47.jpg" class="r5-img"></a>
-                <a href=""><img src="/photos/amazon_h48.jpg" class="r5-img"></a>
-                <a href=""><img src="/photos/amazon_h49.jpg" class="r5-img"></a>
-                <a href=""><img src="/photos/amazon_h50.jpg" class="r5-img"></a>
-                <a href=""><img src="/photos/amazon_h51.jpg" class="r5-img"></a>
-                <a href=""><img src="/photos/amazon_h52.jpg" class="r5-img"></a>
-                <a href=""><img src="/photos/amazon_h53.jpg" class="r5-img"></a>
+                <a href=""><img src="./photos/amazon_h47.jpg" class="r5-img"></a>
+                <a href=""><img src="./photos/amazon_h48.jpg" class="r5-img"></a>
+                <a href=""><img src="./photos/amazon_h49.jpg" class="r5-img"></a>
+                <a href=""><img src="./photos/amazon_h50.jpg" class="r5-img"></a>
+                <a href=""><img src="./photos/amazon_h51.jpg" class="r5-img"></a>
+                <a href=""><img src="./photos/amazon_h52.jpg" class="r5-img"></a>
+                <a href=""><img src="./photos/amazon_h53.jpg" class="r5-img"></a>
             </div>
         </div>
     </div>
     <hr>
     <div class="row9">
        <h1>See personalized recommendations</h1>
-       <h2><a href="/index.html" title="click here"><button type="submit" class="r9-button">Sign in</button></a></h2>
-       <p><strong>New Customer? <a href="/log-in.html" title="click here">Start here</a></strong></p><hr style="margin-top: 10px;">
+       <h2><a href="/index.html" title="click here"><a href="./index.html" class="r9-button">Sign in</a></a></h2>
+       <p><strong>New Customer? <a href="./login.html" title="click here">Start here</a></strong></p><hr style="margin-top: 10px;">
     </div>
     <div class="row10">
         <div class="r10-c1">Back to top</div>
