@@ -178,6 +178,20 @@ span{
 .en{
     margin-top: 5px;
 }
+.drdFooter{
+    margin-top: 10px;
+    border-top: 1px solid black;
+    margin-left: 30px;
+    display: flex;
+    font-size: 8px;
+}
+.drdFooter h2{
+    margin-left: 10px;
+}
+.inf{
+    width: 20px;
+    height: 15px;
+}
 .row2{
     height: 42px;
     background-color: #222f3d;
